@@ -53,13 +53,21 @@ class HBNBCommand(cmd.Cmd):
             before execution (for example, variable substitution) do it here.
         """
         if "." in line:
-            args = re.split(r'\.|\(|\)|, ', line)
+            args = re.split(r'\.|\(|\)|, |{|}|: ', line)
             line = args[1] + " " + args[0]
             if len(args) > 3:
                 line = line + " " + args[2][1:-1]
             if len(args) > 4:
-                line = line + " " + args[3][1:-1] + " " + args[4]
-                print(line)
+                if len(args[3]) == 0:
+                    i = 4
+                    while args[i]:
+                        upline = args[0] + " " + args[2][1:-1]
+                        upline = upline + " " + args[i][1:-1] + " " + args[i+1]
+                        self.do_update(upline)
+                        i += 2
+                    return " "
+                else:
+                    line = line + " " + args[3][1:-1] + " " + args[4]
             if "count" in args:
                 count(args[0])
                 line = "\n"
