@@ -55,6 +55,8 @@ class HBNBCommand(cmd.Cmd):
         if "." in line:
             args = re.split(r'\.|\(|\)', line)
             line = args[1] + " " + args[0]
+            if len(args) > 3:
+                line = line + " " + args[2][1:-1]
             if "count" in args:
                 count(args[0])
                 line = "\n"
