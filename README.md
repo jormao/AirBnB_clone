@@ -12,7 +12,7 @@ The AirBnB clone is for us to put in practice what we've learned so far, inherit
 The airbnb console (command interpreter) is to manipulate a powerful storage system, serializing and deserializing json files. The console can be run in two different modes, interactive mode and non-interactive mode.
 To use the console first clone the following repository.
 ```
-git clone ...
+git clone https://github.com/jormao/AirBnB_clone
 ```
 ### Interactive Mode
 * To start the console in the interactive mode run.
