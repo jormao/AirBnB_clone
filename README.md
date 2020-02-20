@@ -8,11 +8,24 @@
 ---
 The AirBnB clone is for us to put in practice what we've learned so far, inheritance, classes, opening and closing files and changing them.
 ---
+| File Name | Description and contents |
+| --- | --- |
+| [console.py](console.py) | This is the command interpreter file. |
+| [amenity.py](models/amenity.py) | This file contains de class amenity. |
+| [base_model.py](models/base_model.py) | This file contains de class base_model and its methods like save(), str(), dict(). |
+| [city.py](models/city.py) | This file contains de class city. |
+| [place.py](models/place.py) | This file contains de class place. |
+| [review.py](models/review.py) | This file contains de class review. |
+| [state.py](models/state.py) | This file contains de class state. |
+| [user.py](models/user.py) | This file contains de class user. |
+| [file_storage.py](models/engine/file_storae.py) | This file contains de class file_storage and its methods, like save(), reload(), all(). |
+---
 ## The Console
 The airbnb console (command interpreter) is to manipulate a powerful storage system, serializing and deserializing json files. The console can be run in two different modes, interactive mode and non-interactive mode.
-To use the console first clone the following repository.
+## Installation
+In order to run  the Airbnb console, you must "install" in your repository the console by cloning the following repository (shown below) in your machine running:
 ```
-git clone https://github.com/jormao/AirBnB_clone
+git clone https://github.com/jormao/AirBnB_clone.git
 ```
 ### Interactive Mode
 * To start the console in the interactive mode run.
