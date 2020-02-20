@@ -18,7 +18,7 @@ The AirBnB clone is for us to put in practice what we've learned so far, inherit
 | [review.py](models/review.py) | This file contains de class review. |
 | [state.py](models/state.py) | This file contains de class state. |
 | [user.py](models/user.py) | This file contains de class user. |
-| [file_storage.py](models/engine/file_storae.py) | This file contains de class file_storage and its methods, like save(), reload(), all(). |
+| [file_storage.py](models/engine/file_storage.py) | This file contains de class file_storage and its methods, like save(), reload(), all(). |
 ---
 ## The Console
 The airbnb console (command interpreter) is to manipulate a powerful storage system, serializing and deserializing json files. The console can be run in two different modes, interactive mode and non-interactive mode.
